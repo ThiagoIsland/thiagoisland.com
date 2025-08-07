@@ -439,3 +439,39 @@ body{
     }
 }
 
+@media screen and (min-width: 300px){
+    #menu{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 0;
+    }
+    #presentation{
+        margin-top: 10%;
+    }
+    #presentation h1 {
+        font-size: 10px;
+    }
+    #presentation p {
+        font-size: 16px;
+    }
+
+    .timeline-dot, .timeline-line{
+        display: none;
+    }
+
+    .timeline-content{
+        margin-left: -30px;
+    }
+
+    .stack-content{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .project-card{
+        display: flex;
+        flex-direction: column;
+        max-width: 65%;
+        height: fit-content;
+    }
+}
