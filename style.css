@@ -120,13 +120,12 @@ body{
     animation: slideInDown 1.2s ease-out;
 }
 
-#contact .contact-icons { 
+#contact .contact-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     animation: fadeInUp 2s ease-out;
-    flex-direction: row;
 }
 
 #contact img {
