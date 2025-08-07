@@ -439,7 +439,7 @@ body{
     }
 }
 
-@media screen and (max-width: 600px) and (min-width: 10px){
+@media screen and (max-width: 600px) and (min-width: 10px) {
     #menu{
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
@@ -471,7 +471,7 @@ body{
     .project-card{
         display: flex;
         flex-direction: column;
-        max-width: 65%;
+        width: 85%;
         height: fit-content;
     }
 }
