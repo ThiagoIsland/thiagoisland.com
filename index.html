@@ -27,11 +27,23 @@
             <h1>Hello there! 👋</h1>
             <h1>I'm Thiago Alessandro Cardozo de Avelar</h1>
 
-            <p>I'm Software Engineer, 
-                Tech Enthusiastic and a self-proclaimed Problem Solver. If you're looking for this you're in the right place!</p>
-            
+            <!-- <p>I'm Software Engineer, 
+                Tech Enthusiastic and a self-proclaimed Problem Solver. If you're looking for this you're in the right place!</p> -->
+<div class="hero-main">
+                <div class="terminal">
+                <div class="terminal-header">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+
+                <div class="terminal-body">
+                    <div id="terminal-text"></div>
+                </div>
+            </div>
+
             <div id="contact">
-                <h3>Contact me!</h3>
+                <h3>Let's Build Something Together.</h3>
                 <div class="contact-icons">
                     <a id="linkedinButton" href="https://www.linkedin.com/in/thiagooavelar/">
                         <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" width="30" height="30">
@@ -44,7 +56,53 @@
                     </a>
                 </div>
             </div> 
-        </div>
+   </div>  
+
+   <section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+        
+Software Developer with solid experience building and maintaining web applications and APIs, delivering scalable and efficient solutions.
+
+Skilled in full software development lifecycle, from requirement analysis and design to deployment and maintenance, ensuring high-quality code and performance optimization.
+    </p>
+    <div class="stats">
+
+    <div class="stat-card">
+        <h3>3+</h3>
+        <p>Years Experience</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>3</h3>
+        <p>Companies</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>15+</h3>
+        <p>Technologies</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>∞</h3>
+        <p>Passion</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Always</h3>
+        <p>Evolution</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Always</h3>
+        <p>Studying</p>
+    </div>
+
+    </div>
+
+</section>  
         <div id="jobTimeline">
             <h2 class="section-title">Professional Experience</h2>
             <div class="timeline">
@@ -52,8 +110,24 @@
                 <div id="jobTimeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
+                        <h3>ESIG Software e Consultoria em TI</h3>
+                        <h4>Software Developer • 11/2025 - Present</h4>
+                        <p>
+                            Developed scalable web applications, REST APIs and mobile applications
+                            using .NET, ASP.NET Web Forms, Vue.js and Flutter.
+                            Worked with Oracle and SQL Server databases, CI/CD pipelines,
+                            GitLab, Jenkins and Scrum teams.
+                        </p>
+                        <p>
+                            C# - .NET - ASP.NET - Vue.js - Flutter - Oracle - SQL Server - GitLab - Jenkins
+                        </p>
+                    </div>
+                </div>
+                <div id="jobTimeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <h3>Natal Computer</h3>
-                        <h4>Software Developer - 10/2024 - Present</h4>
+                        <h4>Software Developer - 10/2024 - 10/2025</h4>
                         <p>At Natal Computer, I contribute to the development and maintenance of public body internal systems that public services, internal Software and improve operational efficiency creating new features and enhancing existing ones.</p>
                         <p>C# - .NET - SQL Server - Angular - Docker - Kubernetes - CI/CD - Docker</p>
                     </div>
@@ -111,7 +185,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Access Control with QR Code 🚪</h3>
-                        <p class="project-description">QR Code Access Control is a system designed to manage entry by using QR codes. It enables the registration of users and visitors and generates unique codes for access.
+                        <p class="project-description">A system designed to manage entry by using QR codes.
                         </p>
                         <p class="project-tech">C# • Angular • PostgreSQL</p>
                         <div class="project-links">
@@ -125,7 +199,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Island Games 🕹️</h3>
-                        <p class="project-description"> A personal project with three browser games: Encryption Game, Quiz, and Rock-Paper-Scissors. Built using React with a focus on clean UI and responsive design.</p>
+                        <p class="project-description"> Three browser games: Encryption Game, Quiz, and Rock-Paper-Scissors.</p>
                         <p class="project-tech">React • JavaScript • HTML/CSS</p>
                         <div class="project-links">
                             <a href="#" class="project-link">Live Demo</a>
@@ -150,5 +224,30 @@
             </div>
         </div>
     </div>
+    </div>
 </body>
+<script>
+const element = document.getElementById("terminal-text");
+
+const prompt = "thiago@island:~$ ";
+const text =
+`whoami
+
+Software Engineer with experience building scalable applications for public institutions and private companies, using .NET, SQL and modern technologies.`;
+
+element.innerHTML = `<span class="prompt">${prompt}</span>`;
+
+let i = 0;
+
+function typeWriter(){
+    if(i < text.length){
+
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter,35);
+    }
+}
+
+typeWriter();
+</script>
 </html>
